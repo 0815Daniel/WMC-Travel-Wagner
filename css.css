@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Inconsolata', monospace;
+    scroll-behavior: smooth;
+}
+
+header h1 {
+    font-size: 3em;
+	color: white;
+	text-align: right;
+	margin-top: 1rem;
+	margin: 10rem 2rem 0rem 0rem;
+}
+
+header h2 {
+    font-size: 1.5em;
+	color: white;
+	text-align: right;
+	margin-right: 2rem;
+}
+
+.background {
+    background-position: center;
+    background-attachment: fixed;
+    background-image: url("img/bg.jpg");
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-size: cover;
+    padding-top: 10%;
+    padding-bottom: 14%;
+    height: 500px;
+}
+
+main {
+    padding-top: 2%;
+}
+
+.guid-newfoundland {
+    position: relative;
+    margin-top: -5em;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding-left: 25rem;
+    padding-right: 25rem;
+}
+
+.Autor-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.Autor-div img {
+    border-radius: 50%;
+    width: 15%;
+    margin-right: 1rem;
+}
+
+.article1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 2rem 2rem;
+}
+
+.article1 figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1 0 40%;
+    margin-right: 5%;
+}
+
+.article1 figure img {
+    max-width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-caption {
+    font-size: 0.8em;
+    color: grey;
+    margin-top: 10px;
+}
+
+.articletxt {
+    font-size: 15px;
+    flex: 1 0 50%;
+    padding: 20px;
+}
+
+.article2 {
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+
+
+
+.Bild-galerie {
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.reihe-titel {
+    text-align: center;
+}
+
+.reihe {
+    padding-right: 50px;
+    padding-left: 50px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+}
+
+.reihe figure {
+    flex: 1;
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.reihe figure img {
+    width: 25rem;
+    object-fit: cover;
+    margin-top: 20px;
+}
+
+.reihe figure figcaption {
+    text-align: center;
+    font-weight: bold;
+}
+
+.icon1 {
+    display: flex;
+    align-items: center;
+    padding-left: 70px;
+}
+
+.icon1 p {
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+footer {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("img/unten.jpg") no-repeat center center;
+    background-size: cover;
+	color:white;
+}
+footer h2{
+	font-size: 2rem;
+}
+
+.input-email {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    padding-bottom: 30px;
+    font-weight: bold;
+	color: white;
+	text-align: center;
+	
+}
+
+.input-email input::placeholder {
+    color: white;
+}
+
+.input-email input {
+    border: 0;
+    background: transparent;
+    width: 80%;
+    font-size: 16px;
+    color: white;
+	border-bottom: 1px solid white;
+	margin-right: 3rem;
+}
+
+.input-email input:focus {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid white;
+}
+
+button {
+  color: white;
+  border: 3px solid white;
+  font-weight: bold;
+  font-size: 13px;
+  background-color: transparent;
+  padding: 2rem;
+  border-radius: 2px;
+  width: 120px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button:hover {
+    color: black;
+    background-color: white;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.social img {
+  width: 3rem;
+  border-radius: 50%;
+  margin: 0 1rem;
+}
+
+@media screen and (max-width: 1765px) {
+    .Discovery-Section {
+        padding-top: 50px;
+    }
+}
+
+@media screen and (max-width: 1197px) {
+    .article1 {
+        flex-direction: column;
+    }
+
+    .article1 figure {
+        max-width: 70%;
+        margin-bottom: 20px;
+        order: -1;
+    }
+
+    .article1 figure img {
+        margin: 0 auto;
+    }
+
+    .articletxt {
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+    .reihe {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reihe figure {
+        flex: 1;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .reihe figure img {
+        width: 20rem;
+        margin-top: 20px;
+    }
+
+    .reihe figure figcaption {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .Discovery-Section {
+        padding-top: 50px;
+    }
+
+    .Bild-galerie {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reihe-titel {
+        margin-top: 230px;
+    }
+}
