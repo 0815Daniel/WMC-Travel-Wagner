@@ -22,14 +22,10 @@ header h2 {
 }
 
 .background {
-    background-position: center;
-    background-attachment: fixed;
-    background-image: url("img/bg.jpg");
-    background-repeat: no-repeat;
+    background: url("img/bg.jpg") no-repeat center fixed;
     background-blend-mode: multiply;
     background-size: cover;
-    padding-top: 10%;
-    padding-bottom: 14%;
+    padding: 10% 0% 14% 0%;
     height: 500px;
 }
 
@@ -39,17 +35,16 @@ main {
 
 .guid-newfoundland {
     position: relative;
-    margin-top: -5em;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
     left: 50%;
     transform: translateX(-50%);
     width: 80%;
     max-width: 30rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+	margin-top: -5em;
     background-color: white;
-    padding-left: 25rem;
-    padding-right: 25rem;
+	padding: 0rem 25rem 0rem 25rem;
 }
 
 .Autor-div {
@@ -85,12 +80,11 @@ main {
 
 .article1 figure img {
     max-width: 100%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .image-caption {
     font-size: 0.8em;
-    color: grey;
+    color: black;
     margin-top: 10px;
 }
 
@@ -101,24 +95,20 @@ main {
 }
 
 .article2 {
-    text-align: left;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 20px;
     display: flex;
-    flex-direction: column;
+	flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    margin-top: 50px;
-    margin-bottom: 150px;
+    align-items: center;
+	text-align: left;
+    max-width: 800px;
+    padding: 0 20px;
+	margin: 50px auto 150px auto;
 }
 
-
-
 .Bild-galerie {
-    padding-bottom: 50px;
     display: flex;
     flex-direction: column;
+	padding-bottom: 50px;
 }
 
 .reihe-titel {
@@ -126,12 +116,12 @@ main {
 }
 
 .reihe {
-    padding-right: 50px;
-    padding-left: 50px;
     display: flex;
     justify-content: center;
     margin: 0 auto;
     position: relative;
+	padding-right: 50px;
+    padding-left: 50px;
 }
 
 .reihe figure {
@@ -166,16 +156,16 @@ main {
 }
 
 footer {
-    width: 100%;
-    height: 100vh;
-    display: flex;
+	display: flex;
     flex-direction: column;
     justify-content: center;
+	color:white;
+    height: 100vh;
     align-items: center;
     background: url("img/unten.jpg") no-repeat center center;
     background-size: cover;
-	color:white;
 }
+
 footer h2{
 	font-size: 2rem;
 }
@@ -183,11 +173,11 @@ footer h2{
 .input-email {
     display: flex;
     flex-direction: row;
+	text-align: center;
     width: 50%;
     padding-bottom: 30px;
     font-weight: bold;
 	color: white;
-	text-align: center;
 	
 }
 
@@ -212,18 +202,18 @@ footer h2{
 }
 
 button {
-  color: white;
-  border: 3px solid white;
-  font-weight: bold;
-  font-size: 13px;
-  background-color: transparent;
-  padding: 2rem;
-  border-radius: 2px;
-  width: 120px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	border: 3px solid white;
+	font-weight: bold;
+	font-size: 13px;
+	background-color: transparent;
+	padding: 2rem;
+	border-radius: 2px;
+	width: 120px;
+	height: 60px;
 }
 
 button:hover {
